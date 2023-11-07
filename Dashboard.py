@@ -8,7 +8,7 @@ import base64
 
 #Setup page 
 st.set_page_config(page_title='Project Dashboard', page_icon='📈' ,layout='wide')
-st.header('Project Dashboard :clipboard:')
+st.header('Project Dashboard')
 
 st.markdown('##')
 
