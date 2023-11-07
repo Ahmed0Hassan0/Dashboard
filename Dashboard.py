@@ -29,7 +29,7 @@ revenue_df['Amount'] =revenue_df['Amount'].astype(float)
 
 
 cash_in_df = pd.read_csv('Datasets/Cash_in.csv')
-cash_out_df = pd.read_csv('Datasets/cash_out.csv')
+cash_out_df = pd.read_csv('Datasets/Cash_out.csv')
 
 
 #site_list = df['المشروع'].unique()
