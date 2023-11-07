@@ -28,7 +28,7 @@ revenue_df = pd.concat([revenue_2022_df, revenue_2023_df])
 revenue_df['Amount'] =revenue_df['Amount'].astype(float)
 
 
-cash_in_df = pd.read_csv('Datasets/cash_in.csv')
+cash_in_df = pd.read_csv('Datasets/Cash_in.csv')
 cash_out_df = pd.read_csv('Datasets/cash_out.csv')
 
 
