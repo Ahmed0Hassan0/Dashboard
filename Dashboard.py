@@ -67,8 +67,8 @@ profit_combined['Date'] = pd.to_datetime(profit_combined['Date'])
 profit_combined_grouped = profit_combined.groupby(['Date', profit_combined.index.get_level_values(0)])['Amount'].sum().groupby(level=1).cumsum().reset_index()
 
 if add_selectbox =='':
-    st.image(image, caption = 'Wellcome to our Analysis ')
-    #st.write('Please select a project');
+    #st.image(image, caption = 'Wellcome to our Analysis ')
+    st.write('Please select a project');
     #st.write(df)
 else:
     #st.write(site_selected) #.transpose()
@@ -152,7 +152,7 @@ with col1:
     site_selected_cost = cost_df[cost_df['اسم المشروع'] == add_selectbox]
     site_selected_cost_pt = site_selected_cost.groupby('نوع المصرف ')['Amount'].sum()
     
-    st.write(site_selected_cost_pt)
+    st.table(site_selected_cost_pt)
 
     site_selected_cost_pt_csv = site_selected_cost_pt.to_csv(index=True, encoding='utf-8-sig')
     file_name1 = 'Cost Analysis_' + add_selectbox +'.csv'
