@@ -5,3 +5,4 @@ plotly-express==0.4.1
 plotly==5.11.0
 pip==23.2.1
 streamlit-option-menu==0.3.6
+pandas==1.5.2
